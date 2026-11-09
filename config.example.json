@@ -1,0 +1,84 @@
+{
+  "browser": {
+    "executable_path": "auto",
+    "user_data_dir": "~/.boss-edge-profile",
+    "debug_port": 9222,
+    "window_size": "1280,900"
+  },
+  "candidate": {
+    "display_name": "李先生",
+    "assistant_persona": "李先生的 AI 助手",
+    "resume_facts": [
+      "计算机科学硕士，专注于高并发分布式后端架构、云原生微服务治理与数据密集型系统研发",
+      "核心项目1：主导高并发订单与结算微服务重构（Go / gRPC / Redis Cluster），峰值 QPS 提升 3 倍，P99 延迟降低 45%",
+      "核心项目2：设计并落地基于 Kubernetes 与 Istio 的多集群容器化部署与可观测性平台（Prometheus / OpenTelemetry）",
+      "核心项目3：构建基于 Kafka 与 ClickHouse 的实时日志流处理与分析管线，支持日均百亿级事件吞吐"
+    ],
+    "greeting_templates": {
+      "default": "您好，我是{display_name}的 AI 助手。看到贵司在招「{job_title}」，与他的工程研发经历非常契合：他主要从事高并发分布式后端（Go/Python）、云原生微服务架构以及大规模数据流处理系统研发。希望能有机会向贵团队学习请教，期待您的回复！",
+      "infra": "您好，我是{display_name}的 AI 助手。看到贵司在招「{job_title}」，与他的云原生基础架构经历非常契合：他主要从事 Kubernetes 容器编排、服务网格治理以及高可用可观测性平台建设。希望能有机会向贵团队学习请教，期待您的回复！",
+      "fullstack": "您好，我是{display_name}的 AI 助手。看到贵司在招「{job_title}」，与他的全栈工程经历非常契合：他熟悉 Go/Python 后端架构与 TypeScript/React 现代前端工程化，具备独立交付核心业务系统的完整经验。希望能有机会向贵团队学习请教，期待您的回复！"
+    },
+    "attachments": {
+      "default": "后端与云原生架构_个人简历",
+      "fullstack": "全栈研发工程师_个人简历"
+    }
+  },
+  "target": {
+    "city_code": "101020100",
+    "job_type": "1901",
+    "experience_codes": "104,105",
+    "scale_codes": "302,303,304",
+    "salary_min_k": 25,
+    "salary_max_k": 45,
+    "salary_target_overlap": [28, 38],
+    "search_keywords": [
+      "Golang后端工程师",
+      "云原生架构师",
+      "分布式系统研发",
+      "资深后端开发"
+    ],
+    "batch_apply_limit": 5
+  },
+  "filters": {
+    "blocked_company_keywords": [
+      "外企德科",
+      "中软国际",
+      "软通动力",
+      "法本",
+      "博彦",
+      "人瑞",
+      "科锐",
+      "佰钧成",
+      "汉克时代",
+      "易思博",
+      "猎头",
+      "人力资源"
+    ],
+    "blocked_industry_keywords": [],
+    "blocked_address_keywords": [
+      "客户现场",
+      "驻场"
+    ],
+    "blocked_title_keywords": [
+      "销售",
+      "运营",
+      "客服",
+      "专员",
+      "交付",
+      "运维驻场",
+      "硬件",
+      "嵌入式",
+      "讲师"
+    ],
+    "blocked_degree_or_exp_tags": [
+      "10年以上",
+      "实习"
+    ]
+  },
+  "patrol": {
+    "active_hours": [8, 23],
+    "interval_seconds": 1800,
+    "max_chat_scan": 16
+  }
+}

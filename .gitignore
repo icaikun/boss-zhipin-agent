@@ -1,0 +1,11 @@
+# Personal configuration & runtime state (NEVER commit personal data)
+config.json
+applied_history.json
+*.pdf
+*.docx
+*.png
+*.jpg
+.boss-edge-profile/
+__pycache__/
+*.pyc
+.env
